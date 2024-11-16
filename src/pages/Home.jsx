@@ -25,18 +25,23 @@ const Home = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto py-12 px-6">
-      <h1 className="text-4xl font-bold text-center mb-8">Welcome to the Online Tools App</h1>
+    <div className="max-w-7xl mx-auto py-12 px-6">
+      <h1 className="text-4xl font-bold text-center text-blue-600 mb-10">
+        Welcome to the Online Tools Collection
+      </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {tools.map((tool, index) => (
           <motion.div
             key={index}
-            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link to={tool.path} className="text-xl font-semibold text-blue-600 hover:text-blue-800">
+            <Link
+              to={tool.path}
+              className="text-xl font-semibold text-blue-600 hover:text-blue-800 transition duration-300 ease-in-out"
+            >
               {tool.name}
             </Link>
           </motion.div>
