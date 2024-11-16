@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { CheckIcon, XIcon } from "@heroicons/react/outline"; // Icons for valid/invalid
 import { motion } from "framer-motion"; // For button animation
-import ReactJson from "react-json-view"; // To display JSON data nicely
 
 const ToolJsonValidator = () => {
   const [input, setInput] = useState("");
