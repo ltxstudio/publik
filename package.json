@@ -14,6 +14,8 @@
     "react-router-dom": "^6.28.0",
     "framer-motion": "^11.11.17",
     "axios": "^1.7.7",
+    "jsqr": "^1.4.0",
+    "react-dropzone": "^14.3.5",
     "js-beautify": "^1.15.1",
     "javascript-obfuscator": "^4.1.1",
     "crypto-js": "^4.2.0",
